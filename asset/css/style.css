@@ -6,4 +6,75 @@ html {
 }
 body {
   font-size: 1.6rem;
+  font-family: "Poppins", serif;
+}
+/* ==========all============= */
+a {
+  text-decoration: none;
+}
+.main-content {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(100% - 48px);
+}
+.btn {
+  display: inline-block;
+  min-width: 118px;
+  line-height: 50px;
+  padding: 0 16px;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  background: #171100;
+  border-radius: 24.5px;
+}
+/* ==================header========== */
+.header {
+  background: #fffcf4;
+}
+.header.fixed {
+  position: sticky;
+  top: -28px;
+}
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+.nav {
+  margin-left: auto;
+}
+.nav ul {
+  display: flex;
+}
+.nav a {
+  position: relative;
+  font-size: 1.6rem;
+  color: #5f5b53;
+  padding: 0 21px;
+}
+.nav .active a,
+.nav a:hover {
+  color: #171100;
+  /* font-weight: 600; */
+  text-shadow: 0.5px 0 0 currentColor;
+}
+.nav .active a::after {
+  display: block;
+  content: "";
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background: #171100;
+  position: absolute;
+  left: 21px;
+  bottom: 3px;
+}
+.header .btn-sign {
+  min-width: 144px;
+}
+.header .action {
+  margin-left: 49px;
 }
